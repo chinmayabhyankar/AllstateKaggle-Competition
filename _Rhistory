@@ -1,0 +1,163 @@
+a<-1
+clear
+print(a)
+str(nondf)
+df<-read.xlsx2('Analytics Challenge Data 2.xlsx',sheetIndex =1,as.data.frame = T)
+nondf<-read.xlsx2('Analytics Challenge Data 2.xlsx',sheetIndex =1,as.data.frame = F)
+library("rattle", lib.loc="~/R/win-library/3.3")
+library("Rcpp", lib.loc="~/R/win-library/3.3")
+library("plyr", lib.loc="~/R/win-library/3.3")
+library("magrittr", lib.loc="~/R/win-library/3.3")
+library("corrplot", lib.loc="~/R/win-library/3.3")
+library("cairoDevice", lib.loc="~/R/win-library/3.3")
+library("RGtk2", lib.loc="~/R/win-library/3.3")
+library("reshape", lib.loc="~/R/win-library/3.3")
+library("readxl", lib.loc="~/R/win-library/3.3")
+df<-read.xlsx2('Analytics Challenge Data 2.xlsx',sheetIndex =1,as.data.frame = T)
+nondf<-read.xlsx2('Analytics Challenge Data 2.xlsx',sheetIndex =1,as.data.frame = F)
+library("xlsx", lib.loc="~/R/win-library/3.3")
+df<-read.xlsx2('Analytics Challenge Data 2.xlsx',sheetIndex =1,as.data.frame = T)
+nondf<-read.xlsx2('Analytics Challenge Data 2.xlsx',sheetIndex =1,as.data.frame = F)
+getwd()
+data()
+data12
+iris
+data()
+str(iris)
+summary(iris)
+table(iris$Sepal.Length)
+table(iris$Species)
+install.packages('randomForest')
+library("randomForest", lib.loc="~/R/win-library/3.3")
+?randomForest
+a<-randomForest(Species~.,iris)
+a<-randomForest(Species~.,iris)
+a<-randomForest(Species~.,data=iris)
+a<-randomForest(Species~.,data=iris)
+predictrf<-predict(a,iris)
+predictrf<-predict(a,iris,type="class")
+predictrf
+table(predictrf,iris$Species)
+summary(orange)
+summary(Orange)
+summary(AirPassengers)
+summary(Titanic)
+iris$Species[1:20,]<-NA
+iris$Species[1:20]<-NA
+summary( iris$Species)
+install.packages('VIM')
+library("VIM", lib.loc="~/R/win-library/3.3")
+?kNN
+knn1<-iris
+kNN(knn1,varriable=c(Species),k=4)
+kNN(knn1,variable=c(Species),k=4)
+kNN(knn1,variable=Species,k=4)
+kNN(knn1,variable=c("Species"),k=4)
+iris$Species[1:20]<-NA
+iris$Sepal.Length[1:20]<-NA
+knn1<-iris
+kNN(knn1,k=4)
+install.packages('caret')
+library("caret", lib.loc="~/R/win-library/3.3")
+sample<-createDataPartition(iris,p=.7,list = F)
+sample<-createDataPartition(iris$Species,p=.7,list = F)
+traindata<-iris[sample,]
+sample
+traindata<-iris[sample,]
+testdata<-iris[-sample,]
+rm(list = ls)
+rm(list = ls())
+udacious <- c("Chris Saden", "Lauren Castellano",
+"Sarah Spikes","Dean Eckles",
+"Andy Brown", "Moira Burke",
+"Kunal Chawla")
+numbers <- c(1:10)
+numbers
+numbers <- c(numbers, 11:20)
+numbers
+udacious <- c("Chris Saden", "Lauren Castellano",
+"Sarah Spikes","Dean Eckles",
+"Andy Brown", "Moira Burke",
+"Kunal Chawla", "Chinmay")
+udacious
+mystery = nchar(udacious)
+mystery
+mystery == 11
+udacious[mystery == 11]
+data(mtcars)
+names(mtcars)
+View(mtcars)
+View(mtcars)
+data(mtcars)
+View(mtcars)
+mtcars
+class(mtcars)
+str(mtcars)
+dim(mtcars)
+?row.names
+row.names(mtcars)
+View(mtcars)
+lenght(row.names(mtcars))
+length(row.names(mtcars))
+mtcars
+row.names(mtcars) <- c(1:32)
+mtcars
+data(mtcars)
+head(mtcars, 10)
+mtcars$mpg
+mean(mtcars$mpg)
+install.packages("swirl")
+library(swirl)
+swirl()
+1
+swirl()
+knitr::opts_chunk$set(echo = TRUE)
+plot(pressure)
+fitControl <- trainControl(method = "repeatedcv", number = 4, repeats = 4)
+library("caret", lib.loc="~/R/win-library/3.3")
+fitControl <- trainControl(method = "repeatedcv", number = 4, repeats = 4)
+fitControl
+output_vector = df[,response] == "Responder"
+datasets::ability.cov
+datasets
+mtcars['labels']
+library("e1071", lib.loc="~/R/win-library/3.3")
+install.packages(c("acepack", "car", "caret", "colorspace", "digest", "effects", "ggplot2", "Hmisc", "knitr", "multcomp", "quantreg", "Rcpp", "RcppEigen", "reshape", "reshape2", "rpart.plot", "scales", "SparseM", "stringr", "vcd", "VIM", "XML", "yaml"))
+setwd("C:/Users/Chinmay/Desktop/R/R-projects/Allstate")
+library(data.table)
+train =  fread("train.csv", stringsAsFactors = T)
+train<-as.data.frame(train)
+test =  fread("test.csv", stringsAsFactors = T)
+test<-as.data.frame(test)
+train = train[,-c(1,90,93,97,100,104,107,110,111,112,114,117)]
+install.packages("caret")
+trainknn = knn(log(loss)~.,data = train)
+install.packages("class")
+library("class", lib.loc="~/R/win-library/3.3")
+?knn
+trainknn = knn(log(loss)~.,k = 3,data = train)
+trainknn = knn(train,test,k = 3,train)
+trainknn = knn(train,k = 3)
+i1 <- sapply(train,function(train)is.factor(train)&&length(levels(train))>31)
+i1
+summary(i1)
+str(train)
+train
+View(train)
+summary(train)
+names(train)
+setwd("C:/Users/Chinmay/Desktop/R/R-projects/Allstate")
+library(data.table)
+train =  fread("train.csv", stringsAsFactors = T)
+train<-as.data.frame(train)
+test =  fread("test.csv", stringsAsFactors = T)
+test<-as.data.frame(test)
+train = train[,-c(1,90,93,97,100,104,107,110,111,112,113,114,117)]
+library("tree", lib.loc="~/R/win-library/3.3")
+trainnb = tree(log(loss)~.,data = train)
+traintree = tree(log(loss)~.,data = train)
+set.seed(123)
+traintree = tree(log(loss)~.,data = train)
+predicttree = predict(traintree,test)
+submission.df = data.frame(id = test$id, loss = exp(predicttree))
+write.csv(submission.df, file = "submission4.csv", row.names = T)
